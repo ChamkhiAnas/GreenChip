@@ -1,0 +1,39 @@
+.formation-section {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.forma-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.green-line {
+  background-color: #1BC193;
+  width: 35rem;
+  height: 2px;
+}
+
+.hori-line {
+  background-color: black;
+  width: 7rem;
+  height: 4px;
+}
+
+.ver-line {
+  background-color: black;
+  width: 4px;
+  height: 2rem;
+
+}
+
+
+.arrow-320 {
+  background: #CBC7C6;
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 73% 100%, 0% 100%);
+  width: 21rem;
+  height: 10rem;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+}
