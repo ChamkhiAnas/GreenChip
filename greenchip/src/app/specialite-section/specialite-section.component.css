@@ -1,0 +1,43 @@
+.speci-section {
+  background-color: #1BC193;
+  padding-bottom: 5rem;
+  color: white;
+}
+
+.spec-left {
+  position: relative;
+  flex: 1;
+
+}
+
+.spec-left h2 {
+  position: absolute;
+  top: 14rem;
+  left: -2rem;
+  font-size: 4rem;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.spec-right {
+  flex: 1;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  padding-top: 2rem;
+  border: white solid;
+}
+
+.f-box {
+  border-bottom: white solid;
+}
+
+.l-side {
+  margin-left: 2rem;
+}
+
+.r-side {
+  margin-left: 2rem;
+}
