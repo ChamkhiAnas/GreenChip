@@ -1,19 +1,20 @@
 .speci-section {
   background-color: #1BC193;
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
   color: white;
 }
 
 .spec-left {
   position: relative;
-  flex: 1;
-
+  width: 15%;
 }
+
+
 
 .spec-left h2 {
   position: absolute;
-  top: 14rem;
-  left: -2rem;
+  top: 17rem;
+  right: -6rem;
   font-size: 4rem;
   transform: rotate(-90deg);
   -webkit-transform: rotate(-90deg);
@@ -23,15 +24,19 @@
 }
 
 .spec-right {
-  flex: 1;
+  width: 75%;
   margin-top: 5rem;
   margin-right: 5rem;
-  padding-top: 2rem;
   border: white solid;
+  z-index: 2;
+
 }
+
+
 
 .f-box {
   border-bottom: white solid;
+  padding-top: 20px;
 }
 
 .l-side {
@@ -40,4 +45,25 @@
 
 .r-side {
   margin-left: 2rem;
+}
+
+p {
+  position: relative;
+  padding-left: 3rem;
+
+}
+
+p::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }

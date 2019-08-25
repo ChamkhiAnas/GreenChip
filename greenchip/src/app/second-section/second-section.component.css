@@ -67,6 +67,10 @@
     flex-direction: column !important;
   }
 
+  .right-card {
+    margin-right: 0;
+  }
+
   .right-card button {
     width: 10rem;
   }

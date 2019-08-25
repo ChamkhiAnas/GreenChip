@@ -8,13 +8,7 @@
       <div class="f-box d-flex flex-wrap">
         <div class="l-side ">
           <h4>Développeur data: </h4>
-          <p>M1: Importer et nettoyer les données
-          </p>
-          <p>M2: comprendre et utiliser les bases de données
-          </p>
-          <p>M3: Manipuler et exploiter les données
-          </p>
-          <p>M4: visualiser et partager les données
+          <p *ngFor="let i of devdata">{{i.id}}: {{i.content}}
           </p>
 
         </div>
@@ -28,7 +22,7 @@
 
       <div class="f-box d-flex flex-wrap">
         <div class="l-side ">
-          <h4>Développeur data: </h4>
+          <h4>Référent Digital: </h4>
           <p>M1: Importer et nettoyer les données
           </p>
           <p>M2: comprendre et utiliser les bases de données
@@ -49,7 +43,7 @@
       </div>
       <div class="f-box d-flex flex-wrap">
         <div class="l-side ">
-          <h4>Développeur data: </h4>
+          <h4>Développeur web et mobile: </h4>
           <p>M1: Importer et nettoyer les données
           </p>
           <p>M2: comprendre et utiliser les bases de données

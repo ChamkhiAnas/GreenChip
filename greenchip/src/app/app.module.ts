@@ -12,6 +12,7 @@ import { FormationSectionComponent } from './formation-section/formation-section
 import { SpecialiteSectionComponent } from './specialite-section/specialite-section.component';
 import { InscrisSectionComponent } from './inscris-section/inscris-section.component';
 import { CampusSectionComponent } from './campus-section/campus-section.component';
+import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { CampusSectionComponent } from './campus-section/campus-section.componen
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    ModalModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
