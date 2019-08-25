@@ -1,0 +1,344 @@
+.container_3 {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    width: 100%;
+    background-image: url(../../assets/images/inscris-section.png);
+    height: 169px;
+
+}
+
+
+.container_3 > .c_3_1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_3 > .c_3_1 > h1 {
+
+
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 35.2px;
+    letter-spacing: 1px;
+    padding-top: 0px;
+    margin-top: 0px;
+
+}
+
+
+
+.container_3 > .c_3_2 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+}
+
+.container_3 > .c_3_2 > h1 {
+
+
+   
+    color: #ffffff;
+    font-family: "Poppins";
+    font-weight: bold;
+    font-size: 16px;
+    padding-right: 2px;
+    padding-top: 29px;
+    letter-spacing: 1px;
+    background-color: #1bc192;
+    width: 265px;
+    height: 66px;
+    border-radius: 51px;
+    padding-left: 69px;
+    z-index: 2;
+    margin-bottom: 0;
+}
+
+
+
+.container_3 > .c_3_2 > h2 {
+
+
+   
+    background-color: #1ba57e;
+    width: 265px;
+    height: 66px;
+    border-radius: 51px;
+    margin: 0;
+    position: relative;
+    bottom: 61px;
+    z-index: 1;
+
+}
+
+
+/* -----------------  START OF MEDIA QUERY FOOTER ------------------- */
+
+
+@media screen and (max-width: 900px) {
+
+    .container_3 {
+
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        background-image: url(../../assets/images/inscris-section.png);
+        height: 250px;
+    
+    }
+
+
+    .container_3 > .c_3_1 > h1 {
+
+
+        padding-top: 32px;
+        margin-top: 0px;
+    
+    }
+
+
+
+    
+    }
+
+
+    /* --------------------------- START OF NAVBAR  -------------------------------- */
+
+
+.container_1 {
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    background-color: black;
+    height: 85px;
+    color: white;
+    font-family: "Raleway";
+    font-weight: 700;
+    /* margin-bottom: 0px; */
+
+
+
+}
+
+.container_1 > li {
+
+
+    margin-top: 34px;
+    margin-right: 65px;
+    font-size: 17px;
+
+
+
+}
+
+
+.container_1 > .logo   {
+
+
+    margin-right: auto;
+    position: relative;
+    bottom: 12px;
+    left: 28px;
+
+
+}
+
+.container_1 > .logo  img  {
+
+
+    width: 190px;
+
+}
+
+
+.container_1 > .button_1  {
+
+
+    background-color: #1bc192;
+    padding-right: 41px;
+    padding-left: 44px;
+    margin-bottom: 14px;
+    margin-top: 17px;
+    padding-top: 16px;
+
+
+}
+
+
+/* --------------------------- END OF NAVBAR  -------------------------------- */
+
+/* --------------------------- START OF THE FOOTER  -------------------------------- */
+
+.container_2 {
+
+
+
+    display: grid;
+    grid-template-columns: 20% 56% 24%;
+
+    background-color: black;
+    height: 125px;
+    width: 100%;
+
+}
+
+
+.container_2  > .c2_i1 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.container_2  > .c2_i2 {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.container_2  > .c2_i3 {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.container_2  > .c2_i1 > h6 {
+
+    color: #b8b8b8;
+    font-family: "Poppins";
+    font-weight: 700;
+    padding-top: 17px;
+    font-size: 12px;    
+}
+
+
+.container_2  > .c2_i1 > h5 {
+
+    color: #1bc192;
+    font-family: "Poppins";
+    font-weight: 700;
+    font-size: 13px;
+    padding-bottom: 4px;
+    padding-right: 19px;
+    
+    
+
+   
+}
+
+
+.container_2  > .c2_i2 > p {
+
+    color: #b8b8b8;
+    font-family: "Poppins";
+    font-weight: 700;
+    padding-top: 17px;
+    opacity: 0.6;
+    padding-top: 28px;
+    font-size: 12px;
+    
+}
+
+
+.container_2  > .c2_i3 > h6 {
+
+    color: #b8b8b8;
+    font-family: "Poppins";
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 12px;
+
+}
+
+
+
+.container_2_1{
+
+
+    display: flex;
+    flex-direction: row;
+    padding-left: 0px;
+
+
+
+}
+.container_2_1 > div {
+
+
+    margin-right: 16px;
+    width: 38px;
+    height: 24px;
+    padding-top: 6px;
+
+
+
+}
+
+
+/* -----------------  START OF MEDIA QUERY FOOTER ------------------- */
+
+
+@media screen and (max-width: 900px) {
+
+
+    .container_2 {
+
+        display: grid;
+        grid-template-columns: 1fr ;
+        height: 229px;
+    }
+
+
+
+    .container_2_1 > div {
+
+
+        margin-bottom: 20px;
+
+    
+    
+    
+    }
+
+
+    .container_2  > .c2_i1 > h5 {
+
+   
+        padding-right:0px;
+        
+    
+       
+    }
+    
+   
+    }
+
+/* -----------------  END  OF MEDIA QUERY FOOTER ------------------- */
+
+
+
+
+
