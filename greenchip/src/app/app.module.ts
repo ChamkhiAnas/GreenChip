@@ -8,6 +8,7 @@ import { SecondSectionComponent } from './second-section/second-section.componen
 import { FormationSectionComponent } from './formation-section/formation-section.component';
 import { InscrisSectionComponent } from './inscris-section/inscris-section.component';
 import { CampusSectionComponent } from './campus-section/campus-section.component';
+import { DoudaSectionComponent } from './douda-section/douda-section.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { CampusSectionComponent } from './campus-section/campus-section.componen
     SecondSectionComponent,
     FormationSectionComponent,
     InscrisSectionComponent,
-    CampusSectionComponent
+    CampusSectionComponent,
+    DoudaSectionComponent
   ],
   imports: [
     BrowserModule,

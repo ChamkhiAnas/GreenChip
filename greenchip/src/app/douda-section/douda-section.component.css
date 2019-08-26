@@ -1,0 +1,410 @@
+
+ .container_5 {
+
+
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 43px;
+    
+
+ }
+ 
+ .C_5_1 {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 81px;
+    margin-right: 90px;
+    margin-left: 17px;
+
+}
+
+
+
+  .C_5_1 > h6 {
+    
+    color: #000000;
+    font-family: "Noah";
+    font-weight: bold;
+    font-size: 1.4rem;
+
+}
+
+
+ .C_5_1 > p {
+    
+    color: #000000;
+    font-family: "Noah";
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+}
+
+
+ .C_5_1 > .shape_1 {
+    
+  
+    background-color: black;
+    width: 179px;
+    height: 3px;
+    margin-bottom: 0px;
+
+
+}
+ .C_5_1 > .shape_2 {
+    
+  
+    background-color: black;
+    width: 3px;
+    height: 37px;
+    margin-bottom: 10px;
+
+
+}
+
+
+  .C_5_2 {
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 81px;
+  
+}
+
+
+
+    .C_5_2 > h6 {
+    
+    color: #000000;
+    font-family: "Noah";
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+
+    .C_5_2 > p {
+    
+    color: #000000;
+    font-family: "Noah";
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 198px;
+}
+
+
+
+    .C_5_2 > .shape_1 {
+    
+  
+    background-color: black;
+    width: 179px;
+    height: 3px;
+    margin-bottom: 0px;
+    margin-right: 198px;
+
+
+}
+     .C_5_2 > .shape_2 {
+    
+  
+    background-color: black;
+    width: 3px;
+    height: 37px;
+    margin-bottom: 10px;
+    margin-right: 204px;
+
+}
+
+
+
+
+/* -------- START OF THE CONTAINER 6 ------- */
+
+.container_6 {
+
+        display: flex;
+        flex-direction: column;
+
+}
+
+
+    .c_6_1 > img {
+
+
+        width: 90%;
+        margin-left: 61px;
+
+    }
+
+
+    .c_6_2 {
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+
+    }
+
+
+
+
+    .c_6_2 > h6 {
+        
+        color: #000000;
+        font-family: "Noah";
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin-right: 206px;
+
+    }
+
+
+    .c_6_2 > p {
+    
+    color: #000000;
+    font-family: "Noah";
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+    padding-right: 184px;
+    
+}
+
+
+
+    .c_6_2 > .shape_1 {
+    
+  
+    background-color: black;
+    width: 179px;
+    height: 3px;
+    margin-bottom: 13px;
+    margin-right: 198px;
+
+
+}
+     .c_6_2 > .shape_2 {
+    
+  
+    background-color: black;
+    width: 3px;
+    height: 37px;
+    margin-bottom: 0px;
+    margin-right: 204px;
+    margin-right: 294px;
+    margin-top: 13px;
+
+}
+
+
+.container_7{
+
+
+
+    display: none;
+
+
+}
+
+
+
+
+/* --------------------------------START OF THE MEDIA QUERY ------------------------------------ */
+
+
+
+
+@media screen and (max-width: 997px) {
+
+
+    .hidden {
+
+        display: none;
+      
+    }
+
+    .container_7{
+
+
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr;
+    
+    
+    }
+
+    .c_7_1 {
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 19px;
+
+
+
+    }
+
+
+  
+
+
+    .c_7_2   {
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        margin-top: 68px;
+
+
+    }
+
+
+    #zerwata_2 {
+
+        margin-top: 259px;
+
+
+
+    }
+
+
+    .c_7_3{
+
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    }
+
+
+    .c_7_3_1 {
+
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 148px; */
+
+    }
+
+    .c_7_3_1 > h6 {
+
+        color: black;
+        font-family: "Noah";
+        font-weight: bold;
+        font-size: 1rem;
+
+    }
+
+
+    
+    .c_7_3_1 > p {
+
+        color: #000000;
+        font-family: "Noah";
+        font-weight: bold;
+        font-size: 0.8rem;
+
+    }
+
+
+
+
+
+    .c_7_3_2 {
+
+        display: flex;
+        flex-direction: column;
+        /* margin-top: 324px; */
+
+
+    }
+
+    .c_7_3_2 > h6 {
+
+        color: black;
+        font-family: "Noah";
+        font-weight: bold;
+        font-size: 1rem;
+
+    }
+
+
+    
+    .c_7_3_2 > p {
+
+        color: #000000;
+        font-family: "Noah";
+        font-weight: bold;
+        font-size: 0.8rem;
+
+    }
+
+    
+    
+
+    #zerwata_3 {
+
+        margin-top: 259px;
+
+
+
+
+    }
+
+
+
+
+    
+    .c_7_3_3 {
+
+        display: flex;
+        flex-direction: column;
+
+        /* margin-top: 357px; */
+
+    }
+
+    .c_7_3_3 > h6 {
+
+        color: black;
+        font-family: "Noah";
+        font-weight: bold;
+        font-size: 1rem;
+
+    }
+
+
+    
+    .c_7_3_3 > p {
+
+        color: #000000;
+        font-family: "Noah";
+        font-weight: bold;
+        font-size: 0.8rem;
+
+    }
+
+    
+    
+
+   
+
+}
+/* --------------------------------END  OF THE MEDIA QUERY ------------------------------------ */
+
+
+
+
