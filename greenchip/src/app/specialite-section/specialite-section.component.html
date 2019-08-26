@@ -4,17 +4,17 @@
       <h2 class="text-uppercase">spécialités</h2>
     </div>
 
+
     <div class="spec-right">
       <div class="f-box d-flex flex-wrap">
         <div class="l-side ">
           <h4>Développeur data: </h4>
-          <p *ngFor="let i of devdata">{{i.id}}: {{i.content}}
-          </p>
-
+          <p *ngFor="let i of devdata">{{i.id}}: {{i.content}}</p>
         </div>
         <div class="r-side">
           <h4>Métiers visés:</h4>
           <div class="jobs-box">
+            <p *ngFor="let j of datajob">{{j}}</p>
 
           </div>
         </div>
@@ -23,20 +23,12 @@
       <div class="f-box d-flex flex-wrap">
         <div class="l-side ">
           <h4>Référent Digital: </h4>
-          <p>M1: Importer et nettoyer les données
-          </p>
-          <p>M2: comprendre et utiliser les bases de données
-          </p>
-          <p>M3: Manipuler et exploiter les données
-          </p>
-          <p>M4: visualiser et partager les données
-          </p>
-
+          <p *ngFor="let i of refdeg">{{i.id}}: {{i.content}}</p>
         </div>
         <div class="r-side">
           <h4>Métiers visés:</h4>
           <div class="jobs-box">
-
+            <p *ngFor="let j of digijob">{{j}}</p>
           </div>
         </div>
 
@@ -44,23 +36,15 @@
       <div class="f-box d-flex flex-wrap">
         <div class="l-side ">
           <h4>Développeur web et mobile: </h4>
-          <p>M1: Importer et nettoyer les données
-          </p>
-          <p>M2: comprendre et utiliser les bases de données
-          </p>
-          <p>M3: Manipuler et exploiter les données
-          </p>
-          <p>M4: visualiser et partager les données
-          </p>
-
+          <p *ngFor="let i of devweb">{{i.id}}: {{i.content}}</p>
         </div>
         <div class="r-side ">
           <h4>Métiers visés:</h4>
           <div class="jobs-box">
+            <p *ngFor="let j of webjob">{{j}}</p>
 
           </div>
         </div>
-
       </div>
 
     </div>

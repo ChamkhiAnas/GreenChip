@@ -10,7 +10,6 @@
 }
 
 
-
 .spec-left h2 {
   position: absolute;
   top: 17rem;
@@ -28,7 +27,6 @@
   margin-top: 5rem;
   margin-right: 5rem;
   border: white solid;
-  z-index: 2;
 
 }
 
@@ -39,21 +37,37 @@
   padding-top: 20px;
 }
 
+
 .l-side {
   margin-left: 2rem;
+  margin-bottom: 2rem;
+  flex: 1;
 }
 
-.r-side {
-  margin-left: 2rem;
+.l-side h4 {
+  padding-bottom: 3rem;
+  position: relative;
 }
 
-p {
+.l-side h4::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  width: 9rem;
+  height: 3px;
+  top: 3.5rem;
+  left: 3rem;
+
+}
+
+.l-side p {
   position: relative;
   padding-left: 3rem;
+  font-weight: 500;
 
 }
 
-p::before {
+.l-side p::before {
   content: "";
   position: absolute;
   background-color: white;
@@ -66,4 +80,45 @@ p::before {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
+}
+
+
+.r-side {
+  margin-left: 2rem;
+  flex: 1;
+
+}
+
+.jobs-box {
+  border: white solid 1px;
+  padding: 27px;
+  margin: 23px;
+  width: 66%;
+  position: relative;
+}
+
+.jobs-box p {
+  font-weight: 500;
+
+}
+
+.jobs-box::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 7rem;
+  height: 3rem;
+  right: -4rem;
+
+}
+
+
+/* media query  */
+
+@media screen and (max-width: 988px) {
+  .jobs-box::before {
+    display: none;
+  }
+
+
 }

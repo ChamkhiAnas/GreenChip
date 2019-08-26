@@ -1,9 +1,11 @@
+html {
+  scroll-behavior: smooth;
+}
+
+
 /* --------------------------- START OF NAVBAR  -------------------------------- */
 
-
 .container_1 {
-
-
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -13,10 +15,7 @@
   color: white;
   font-family: "Raleway";
   font-weight: 700;
-  /* margin-bottom: 0px; */
-
-
-
+  margin-bottom: 0;
 }
 
 .container_1>li {
@@ -37,7 +36,6 @@
 }
 
 .container_1>.logo img {
-
 
   width: 190px;
 
@@ -99,12 +97,6 @@
 
 
   }
-
-
-
-
-
-
 
 }
 
