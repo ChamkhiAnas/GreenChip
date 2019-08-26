@@ -1,0 +1,69 @@
+.speci-section {
+  background-color: #1BC193;
+  padding-bottom: 7rem;
+  color: white;
+}
+
+.spec-left {
+  position: relative;
+  width: 15%;
+}
+
+
+
+.spec-left h2 {
+  position: absolute;
+  top: 17rem;
+  right: -6rem;
+  font-size: 4rem;
+  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+}
+
+.spec-right {
+  width: 75%;
+  margin-top: 5rem;
+  margin-right: 5rem;
+  border: white solid;
+  z-index: 2;
+
+}
+
+
+
+.f-box {
+  border-bottom: white solid;
+  padding-top: 20px;
+}
+
+.l-side {
+  margin-left: 2rem;
+}
+
+.r-side {
+  margin-left: 2rem;
+}
+
+p {
+  position: relative;
+  padding-left: 3rem;
+
+}
+
+p::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  left: 0px;
+  top: 4px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
