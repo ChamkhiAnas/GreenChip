@@ -1,4 +1,40 @@
 
+
+.heading {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 73px;
+
+}
+
+
+.ligne {
+
+     
+        background-color: #1bc192;
+        width: 49%;
+        height: 3px;
+
+
+
+}
+
+.heading > h1 {
+
+   
+        font-family: "Raleway";
+        font-size: 37px;
+        font-weight: bold;
+        letter-spacing: 2.4px;
+        margin-top: 38px;
+        margin-bottom: 10px;
+        text-align: center;
+
+
+}
  .container_5 {
 
 
@@ -17,7 +53,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 81px;
+    /* margin-top: 81px; */
     margin-right: 90px;
     margin-left: 17px;
 
@@ -74,7 +110,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 81px;
+    /* margin-top: 81px; */
   
 }
 
