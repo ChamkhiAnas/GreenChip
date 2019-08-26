@@ -12,6 +12,7 @@ import { FormationSectionComponent } from './formation-section/formation-section
 import { SpecialiteSectionComponent } from './specialite-section/specialite-section.component';
 import { InscrisSectionComponent } from './inscris-section/inscris-section.component';
 import { CampusSectionComponent } from './campus-section/campus-section.component';
+import { DoudaSectionComponent } from './douda-section/douda-section.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 
 @NgModule({
@@ -22,7 +23,8 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     FormationSectionComponent,
     SpecialiteSectionComponent,
     InscrisSectionComponent,
-    CampusSectionComponent
+    CampusSectionComponent,
+    DoudaSectionComponent
   ],
   imports: [
     BrowserModule,
