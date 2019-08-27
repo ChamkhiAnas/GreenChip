@@ -95,6 +95,7 @@
   margin: 23px;
   width: 66%;
   position: relative;
+
 }
 
 .jobs-box p {
@@ -116,6 +117,8 @@
 /* media query  */
 
 @media screen and (max-width: 988px) {
+
+
   .jobs-box::before {
     display: none;
   }

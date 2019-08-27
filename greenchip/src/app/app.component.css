@@ -2,6 +2,12 @@ html {
   scroll-behavior: smooth;
 }
 
+/* noah font */
+@font-face {
+  font-family: Noah;
+  src: url(../assets/fonts/noah-regular.otf);
+}
+
 
 /* --------------------------- START OF NAVBAR  -------------------------------- */
 
