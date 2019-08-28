@@ -31,14 +31,22 @@ html {
 
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #1bc192;
+}
+
 
 .container_1>.logo {
   margin-right: auto;
   position: relative;
   bottom: 12px;
   left: 28px;
-
-
+  cursor: pointer;
 }
 
 .container_1>.logo img {

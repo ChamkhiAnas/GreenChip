@@ -12,33 +12,27 @@
 
 
   <!-- /* --------------------------- START OF NAVBAR  -------------------------------- */ -->
+  <header>
+    <nav>
+      <ul class="container_1">
 
-  <nav>
-    <ul class="container_1">
+        <li class="logo"><a routerLink="/Acceuil"><img src="../assets/images/logo.png"></a></li>
+        <li>A propos</li>
+        <li>Formation</li>
+        <li><a routerLink="/Candidatures">Candidatures</a></li>
+        <li class="button_1">Inscris-Toi</li>
 
-      <li class="logo"><img src="../assets/images/logo.png"></li>
-      <li>A propos</li>
-      <li>Formation</li>
-      <li>Candidatures</li>
-      <li class="button_1">Inscris-Toi</li>
-
-    </ul>
-  </nav>
-
+      </ul>
+    </nav>
+  </header>
   <!-- /* --------------------------- end OF NAVBAR  -------------------------------- */ -->
 
 
-  <app-hero-section></app-hero-section>
-
-
-
-  <app-second-section></app-second-section>
-  <app-douda-section></app-douda-section>
-
-  <app-specialite-section></app-specialite-section>
-  <app-campus-section> </app-campus-section>
-  <app-inscris-section></app-inscris-section>
-
+  <main>
+    <!--  START OF ROUTER  -->
+    <router-outlet></router-outlet>
+    <!--  END  OF ROUTER  -->
+  </main>
 
 
 
@@ -47,41 +41,22 @@
 
   <footer class="container_2">
     <div class="c2_i1">
-
       <h6>CONTACTER-NOUS SUR : </h6>
       <h5>aljisr@menara.ma</h5>
-
     </div>
-
     <div class="c2_i2">
-
       <p>© Made with love <img src="../assets/images/heart.png"> by coding gang </p>
-
     </div>
-
-
     <div class="c2_i3">
-
-
       <h6>Suivez-nous sur les reseaux sociaux</h6>
       <div class="container_2_1">
-
         <div class="facebook"><img src="../assets/images/facebook logo.png"> </div>
         <div class="twitter"><img src="../assets/images/twitter logo.png"> </div>
         <div class="linkedin"><img src="../assets/images/linkedin logo.png"> </div>
         <div class="youtube"><img src="../assets/images/youtube logo.png"> </div>
-
       </div>
-
     </div>
   </footer>
-
-
-
-
-
-
-
 
 </body>
 
@@ -90,17 +65,7 @@
 
 
 
+<!--  END  OF THE STATIC PART       -->
 
 
-
-
-
-
-
-
-<!--  END  OF THE STATIC PART  -->
-
-
-<!--  START OF THE DYNAMIC PART  -->
-<router-outlet></router-outlet>
-<!--  END  OF THE DYNAMIC PART  -->
+<!-- -___- DUUUHHHHH!! -->

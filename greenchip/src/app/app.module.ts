@@ -14,6 +14,8 @@ import { InscrisSectionComponent } from './inscris-section/inscris-section.compo
 import { CampusSectionComponent } from './campus-section/campus-section.component';
 import { DoudaSectionComponent } from './douda-section/douda-section.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
+import { CandidaturePageComponent } from './pages/candidature-page/candidature-page.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ModalModule } from 'ngx-bootstrap/modal';
     SpecialiteSectionComponent,
     InscrisSectionComponent,
     CampusSectionComponent,
-    DoudaSectionComponent
+    DoudaSectionComponent,
+    CandidaturePageComponent,
+    HomePageComponent
   ],
   imports: [
     BrowserModule,
