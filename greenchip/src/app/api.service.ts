@@ -1,6 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Student } from './students';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 @Injectable({
@@ -10,13 +9,15 @@ export class ApiService {
 
   constructor(private httpClient: HttpClient) { }
 
-  PHP_API_SERVER = "http://127.0.0.1:8080";
-
-  readPolicies(): Observable<Student[]> {
-    return this.httpClient.get<Student[]>(`${this.PHP_API_SERVER}/api/read.php`);
+  getSubscribers() {
+    return this.httpClient.get('http://localhost:3200/api/subscribers');
   }
-
-  createPolicy(student: Student): Observable<Student> {
-    return this.httpClient.post<Student>(`${this.PHP_API_SERVER}/api/create.php`, student);
+  addSubscribers(subscriber) {
+    let httpheader = {
+      headers: new HttpHeaders({
+        'Content-Type': 'application/json'
+      })
+    }
+    return this.httpClient.post('http://localhost:3200/api/addsubscribers', subscriber, httpheader)
   }
 }

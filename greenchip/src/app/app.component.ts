@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiService } from './api.service';
+import { from } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -7,7 +9,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'greenchip';
-  constructor() {
+  subs;
+  constructor(private api_server: ApiService) {
   }
 
   showNav() {
@@ -18,6 +21,13 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
 
+    // ex of service methods ...
+    // this.api_server.getSubscribers().subscribe(
+    //   data => {
+    //     this.subs = data;
+    //     console.log(data);
+    //   }
+    // );
   }
 
 }
