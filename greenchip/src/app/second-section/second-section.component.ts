@@ -7,15 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondSectionComponent implements OnInit {
 
-  items: Array<any> = ["Pas d'enseigants, de classes ou de cahiers",
-    "Apprentissage entre pairs par projet",
+  items: Array<any> = ["Pas de cours magistraux ... mais  plutôt un parcours professionnalisant",
+    "Réapprendre à apprendre avec la pédagogie active",
     "Aucun frais de scolarité!",
-    "Aucune expérience ni diplome requis",
-    "Programme ludique",
-    "Travaille sur des projets réels",
-    "Ambiance de collaboration et de partage",
-    "Contact direct avec le marché de travail",
-    "Etre partie d'une grande famille"
+    "Aucune expérience ni diplome pré-requis",
+    "Chacun contribue a la progression de tous",
+    "Se mettre en projets professionnels ",
+    "Une bonne dose de courage et de détermination",
+    "Un accès facile au marché du travail",
+    "Faire partie d'une nouvelle famille ☺"
 
   ]
 
