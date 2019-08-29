@@ -16,6 +16,10 @@ import { DoudaSectionComponent } from './douda-section/douda-section.component';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { CandidaturePageComponent } from './pages/candidature-page/candidature-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { OujdaComponent } from './pages/oujda/oujda.component';
+import { AutresComponent } from './pages/autres/autres.component';
+import { BerkaneComponent } from './pages/berkane/berkane.component';
+import { JeradaComponent } from './pages/jerada/jerada.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +32,11 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     CampusSectionComponent,
     DoudaSectionComponent,
     CandidaturePageComponent,
-    HomePageComponent
+    HomePageComponent,
+    OujdaComponent,
+    AutresComponent,
+    BerkaneComponent,
+    JeradaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,13 +1,19 @@
 .candidature {
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 
 .upper-part {
-  background: url("../../../assets/images/background_picture.png") no-repeat center center;
+
+  background: url(../../../assets/images/Background.png);
+  object-fit: cover;
+  background-size: cover;
   position: relative;
   font-family: 'Raleway';
   color: white;
   z-index: 0;
+  background-position: center;
+  padding-bottom: 243px;
+  
 }
 
 .upper-part::before {

@@ -1,0 +1,278 @@
+
+.container_8 {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 373px;
+}
+
+
+.card1 {
+
+    padding-left: 24px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    background-color: #e4e2d7;
+    padding-top: 75px;
+}
+
+.card1 > h1 {
+
+    font-family: "Raleway";
+    color: #2b2b2b;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 34px;
+
+}
+
+
+.card1 > p {
+
+    font-family: Raleway;
+    color:  #2b2b2b;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+
+
+}
+
+.card1 > h6 {
+
+    font-family: Noah;
+    color:  #1bc193;
+    font-weight: 700;
+    font-size: 19px;
+
+}
+
+
+
+.card1_1 {
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+#icon {
+
+
+    margin-left: auto;
+    padding-right: 19px;
+    display: flex;
+    flex-direction: row;
+}
+
+#icon > p {
+
+    font-family: Raleway;
+    color: #1bc193;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 12px;
+}
+
+
+#icon > img {
+
+    width: 24px;
+    height: 33px;
+
+
+
+}
+
+/* ----------------- END OF  BLOC 1 ----------------- */
+
+
+.card2 {
+
+    padding-left: 24px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    background-color: #1bc193;
+    padding-top: 75px;
+    order: 3;
+}
+
+.card2 > h1 {
+
+    font-family: "Raleway";
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 34px;
+
+}
+
+
+.card2 > p {
+
+    font-family: Raleway;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+
+
+}
+
+.card2 > h6 {
+
+    font-family: Noah;
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+
+}
+
+
+
+.card2_1 {
+
+    display: flex;
+    flex-direction: row;
+
+}
+.card2_1 > p {
+
+   color: white;
+
+}
+
+#icon_2 {
+
+
+    margin-left: auto;
+    padding-right: 19px;
+    display: flex;
+    flex-direction: row;
+}
+
+#icon_2 > p {
+
+    font-family: Raleway;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 12px;
+}
+
+
+#icon_2 > img {
+
+    width: 24px;
+    height: 33px;
+
+
+
+}
+
+/* ----------------- END OF  BLOC 2 ----------------- */
+
+.card3 {
+
+    padding-left: 24px;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    padding-top: 75px;
+}
+
+.card3 > h1 {
+
+    font-family: "Raleway";
+    color: white;
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 34px;
+
+}
+
+
+.card3 > p {
+
+    font-family: Raleway;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 32px;
+
+
+}
+
+.card3 > h6 {
+
+    font-family: Noah;
+    color: white;
+    font-weight: 700;
+    font-size: 19px;
+
+}
+
+
+
+.card3_1 {
+
+    display: flex;
+    flex-direction: row;
+
+}
+.card3_1 > p {
+
+   color: white;
+
+}
+
+#icon_3 {
+
+
+    margin-left: auto;
+    padding-right: 19px;
+    display: flex;
+    flex-direction: row;
+}
+
+#icon_3 > p {
+
+    font-family: Raleway;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    padding-right: 12px;
+}
+
+
+#icon_3 > img {
+
+    width: 24px;
+    height: 33px;
+
+
+
+}
+
+/* ----------------- START OF THE MEDIA QUERY ----------------- */
+
+
+
+@media screen and (max-width: 988px) {
+
+    .container_8 {
+
+
+        display: grid;
+        grid-template-columns: 1fr ;
+
+
+    }
+    
+  }
+
+
