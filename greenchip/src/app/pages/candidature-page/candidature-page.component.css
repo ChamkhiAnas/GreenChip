@@ -12,9 +12,30 @@
   color: white;
   z-index: 0;
   background-position: center;
-  padding-bottom: 243px;
   
 }
+
+ h2 {
+
+  margin-top: 65px;
+  padding-bottom: 6px;
+  font-family: "Raleway" ;
+  color: #ffffff;
+  font-weight: bold;
+
+}
+
+p{
+
+
+  font-family: "Raleway" ;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 17px;
+  padding-bottom: 28px;
+
+}
+
 
 .upper-part::before {
   position: absolute;
@@ -24,7 +45,7 @@
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.7;
+  opacity: 0.8;
   background-size: cover;
   z-index: -1;
 }
@@ -65,11 +86,28 @@
 }
 
 select {
-  padding: 11px;
+  /* padding: 11px;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
+  cursor: pointer; */
 
+   padding: 12px 58px 9px 9px;
+   border: none;
+   border-radius: 6px;
+   cursor: pointer;
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   appearance: none;
+   background: url(../../../assets/images/selection.png) no-repeat;
+   background-size: 18px;
+   background-color: white;
+   background-position: 95% center;
+   width: 213px;
+   height: 49px;
+   color: #656766;
+   font-size:13px;
+   font-family: "Raleway";
+   font-weight: 500;
 }
 
 
@@ -82,4 +120,29 @@ option {
 
 #city {
   padding-right: 80px;
+}
+
+
+#button {
+
+  position: relative;
+  top: 10px;
+  left: 94px;
+  background: #1BC193;
+  margin-left: 53px;
+  padding: 14px 28px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  border: none;
+  border-radius: 8px!important;
+  font-family: "Raleway";
+  font-weight: 600;
+  
+  
+
+
 }
