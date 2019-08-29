@@ -1,5 +1,6 @@
 .candidature {
   padding-bottom: 0rem;
+  padding-top: 5rem;
 }
 
 .upper-part {
@@ -13,7 +14,7 @@
   z-index: 0;
   background-position: center;
   padding-bottom: 243px;
-  
+
 }
 
 .upper-part::before {
@@ -40,6 +41,7 @@
 }
 
 .center-box button {
+  margin-left: 7rem;
   background: #1BC193;
   padding: 18px 65px;
   font-size: 16px;
@@ -65,13 +67,18 @@
 }
 
 select {
-  padding: 11px;
   border: none;
   border-radius: 6px;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url(../../../assets/images/arrow-down.png) no-repeat;
+  background-size: 18px;
+  background-color: white;
+  background-position: 95% center;
 
 }
-
 
 
 option {
@@ -81,5 +88,9 @@ option {
 }
 
 #city {
-  padding-right: 80px;
+  padding: 7px 101px 7px 10px;
+}
+
+#course {
+  padding: 7px 101px 7px 10px;
 }

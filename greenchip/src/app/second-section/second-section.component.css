@@ -1,6 +1,7 @@
-.second {
+#second {
   border-top: #1BC193 solid 6px;
   padding-top: 5rem;
+  margin-bottom: 5rem;
 }
 
 .left-card {

@@ -1,4 +1,4 @@
-import { Component,OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -7,14 +7,16 @@ import { Component,OnInit } from '@angular/core';
 })
 export class AppComponent implements OnInit {
   title = 'greenchip';
-  constructor(){
+  constructor() {
   }
 
-  ngOnInit(){
+  showNav() {
+    const navbar: HTMLElement = document.querySelector('.container_1');
+    navbar.style.display = 'block';
+    console.log('test');
+  }
 
-
-    
-
+  ngOnInit() {
 
   }
 

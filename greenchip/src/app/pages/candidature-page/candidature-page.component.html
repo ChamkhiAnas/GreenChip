@@ -5,12 +5,12 @@
       <p>Vous pouvez maintenant choisir parmis nos <span>4</span> formations déployés dans la région de Oujda</p>
 
       <form [formGroup]="selectedCity">
-        <div class="d-flex flex-row mb-3">
-          <select class="mr-4" formControlName="city" id="city">
+        <div class="d-flex flex-row flex-wrap m-3 ">
+          <select class="mr-4 mb-3" formControlName="city" id="city">
             <option value="" disabled selected>J'habite à ...</option>
             <option *ngFor="let city of cities" [value]="city.id">{{city.name}}</option>
           </select>
-          <select formControlName="course" id="course">
+          <select formControlName="course" id="course" class="mb-3">
             <option value="" disabled selected>Je veux devenir un ...</option>
 
             <option *ngIf="nagasa == 1">{{courses[0]}}</option>
@@ -22,9 +22,9 @@
             <option *ngIf="nagasa == 4">{{courses[2]}}</option>
 
           </select>
-        </div>
-        <button class="ml-5">Guide du candidat</button>
 
+        </div>
+        <button>Guide du candidat</button>
       </form>
 
     </div>
