@@ -11,24 +11,28 @@ html {
 
 /* --------------------------- START OF NAVBAR  -------------------------------- */
 
-.container_1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  list-style: none;
+nav {
   background-color: black;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 83px;
+  z-index: 3;
+}
+
+.container_1 {
+  list-style: none;
   height: 85px;
   color: white;
   font-family: "Raleway";
   font-weight: 700;
   margin-bottom: 0;
+
 }
 
 .container_1>li {
-  margin-top: 34px;
   margin-right: 65px;
   font-size: 17px;
-
 }
 
 a {
@@ -41,37 +45,23 @@ a:hover {
 }
 
 
-.container_1>.logo {
+.logo {
+
   margin-right: auto;
-  position: relative;
-  bottom: 12px;
-  left: 28px;
   cursor: pointer;
 }
 
-.container_1>.logo img {
-
+.logo img {
   width: 190px;
-
 }
 
 
 .container_1>.button_1 {
-
-
   background-color: #1bc192;
-  padding-right: 41px;
-  padding-left: 44px;
-  margin-bottom: 14px;
-  margin-top: 17px;
-  padding-top: 16px;
+  padding: 10px 16px 10px 16px;
   cursor: pointer;
-
-
 }
 
-
-/* --------------------------- END OF NAVBAR  -------------------------------- */
 
 
 /* -----------------  START OF MEDIA QUERY NAVBAR ------------------- */
@@ -79,45 +69,33 @@ a:hover {
 
 @media screen and (max-width: 988px) {
 
-
   .container_1 {
-
-    display: flex;
-    flex-direction: column;
+    display: none !important;
+    /* flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 365px;
-
-
-
+    height: 365px; */
   }
 
 
-  .container_1>.logo {
-
-
+  /* .logo {
     margin-right: 77px;
     position: relative;
     bottom: 0px;
     left: 0px;
+  } */
 
-
-  }
-
-  .container_1>.button_1 {
-
-
+  /* .container_1>.button_1 {
     padding-bottom: 18px;
 
-
-  }
+  } */
 
 }
 
+/* --------------------------- END OF NAVBAR  -------------------------------- */
 
 
 
-/* -----------------  END  OF MEDIA QUERY NAVBR ------------------- */
 
 
 
@@ -127,16 +105,11 @@ a:hover {
 /* --------------------------- START OF THE FOOTER  -------------------------------- */
 
 .container_2 {
-
-
-
   display: grid;
   grid-template-columns: 20% 56% 24%;
-
   background-color: black;
   height: 125px;
   width: 100%;
-
 }
 
 
@@ -188,18 +161,12 @@ a:hover {
 
 
 .container_2>.c2_i1>h5 {
-
-
-
   color: #1bc192;
   font-family: "Poppins";
   font-weight: 700;
   font-size: 13px;
   padding-bottom: 4px;
   padding-right: 19px;
-
-
-
 }
 
 
@@ -237,14 +204,9 @@ a:hover {
 
 
 .container_2_1 {
-
-
   display: flex;
   flex-direction: row;
   padding-left: 0px;
-
-
-
 }
 
 .container_2_1>div {

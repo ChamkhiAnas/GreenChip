@@ -28,13 +28,14 @@
   z-index: 3;
 }
 
+
 .center-box span {
   color: #1BC193;
 }
 
 .center-box button {
   background: #1BC193;
-  padding: 23px 65px;
+  padding: 18px 65px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
@@ -55,4 +56,24 @@
   background-color: #1AA57E;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+
+select {
+  padding: 11px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+
+}
+
+
+
+option {
+  background-color: #1BC193;
+  color: white;
+
+}
+
+#city {
+  padding-right: 80px;
 }

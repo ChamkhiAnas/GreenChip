@@ -1,3 +1,8 @@
+.second {
+  border-top: #1BC193 solid 6px;
+  padding-top: 5rem;
+}
+
 .left-card {
   padding: 2rem 6rem 4rem 8rem;
   flex: 1;
@@ -60,6 +65,9 @@
   font-family: "Noah";
   font-weight: bold;
 }
+
+
+/* responsive */
 
 @media screen and (max-width: 900px) {
   .second-wrapper {

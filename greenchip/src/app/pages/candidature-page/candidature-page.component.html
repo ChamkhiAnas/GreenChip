@@ -1,9 +1,32 @@
 <section class="candidature">
   <div class="upper-part">
     <div class="center-box d-flex justify-content-center align-items-center flex-column">
-      <h4>Candidater à une formation</h4>
+      <h2>Candidater à une formation</h2>
       <p>Vous pouvez maintenant choisir parmis nos <span>4</span> formations déployés dans la région de Oujda</p>
-      <button>Guide de candidat</button>
+
+      <form [formGroup]="selectedCity">
+        <div class="d-flex flex-row mb-3">
+          <select class="mr-4" formControlName="city" id="city">
+            <option value="" disabled selected>J'habite à ...</option>
+            <option *ngFor="let city of cities" [value]="city.id">{{city.name}}</option>
+          </select>
+          <select formControlName="course" id="course">
+            <option value="" disabled selected>Je veux devenir un ...</option>
+
+            <option *ngIf="nagasa == 1">{{courses[0]}}</option>
+            <option *ngIf="nagasa == 2">{{courses[1]}}</option>
+            <option *ngIf="nagasa == 3">{{courses[2]}}</option>
+
+            <option *ngIf="nagasa == 4">{{courses[0]}}</option>
+            <option *ngIf="nagasa == 4">{{courses[1]}}</option>
+            <option *ngIf="nagasa == 4">{{courses[2]}}</option>
+
+          </select>
+        </div>
+        <button class="ml-5">Guide du candidat</button>
+
+      </form>
+
     </div>
   </div>
 </section>
