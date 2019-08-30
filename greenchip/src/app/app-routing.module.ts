@@ -4,6 +4,7 @@ import { CandidaturePageComponent } from './pages/candidature-page/candidature-p
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CandidaterPageComponent } from './pages/candidater-page/candidater-page.component';
 
+
 const routes: Routes = [
   { path: 'Candidatures', component: CandidaturePageComponent },
   { path: 'Candidater', component: CandidaterPageComponent },

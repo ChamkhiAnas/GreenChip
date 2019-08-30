@@ -10,17 +10,18 @@
 
 <body>
 
-
   <!-- /* --------------------------- START OF NAVBAR  -------------------------------- */ -->
   <header>
     <nav class="d-flex flex-row justify-content-center align-items-center">
       <div class="logo ml-5"><a routerLink="/Acceuil"><img src="../assets/images/logo.png"></a></div>
       <ul class="container_1 d-flex flex-row align-items-center justify-content-center">
-        <li>A propos</li>
-        <li>Formation</li>
+        <li> <a routerLink="/">A propos</a></li>
+        <li><a routerLink="/"> Formation</a></li>
         <li><a routerLink="/Candidatures">Candidatures</a></li>
         <li class="button_1">Inscris-Toi</li>
       </ul>
+      <div class="toggler m-2" (click)="showNav()"><img src="../assets/images/arrow-down.png" alt="toggler"
+          class="w-100 h-100"></div>
     </nav>
   </header>
   <!-- /* --------------------------- end OF NAVBAR  -------------------------------- */ -->
@@ -60,10 +61,5 @@
 
 </html>
 
-
-
-
 <!--  END  OF THE STATIC PART       -->
-
-
 <!-- -___- DUUUHHHHH!! -->
