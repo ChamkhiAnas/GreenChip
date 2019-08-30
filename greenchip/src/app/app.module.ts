@@ -20,6 +20,7 @@ import { OujdaComponent } from './pages/oujda/oujda.component';
 import { AutresComponent } from './pages/autres/autres.component';
 import { BerkaneComponent } from './pages/berkane/berkane.component';
 import { JeradaComponent } from './pages/jerada/jerada.component';
+import { CandidaterPageComponent } from './pages/candidater-page/candidater-page.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { JeradaComponent } from './pages/jerada/jerada.component';
     OujdaComponent,
     AutresComponent,
     BerkaneComponent,
-    JeradaComponent
+    JeradaComponent,
+    CandidaterPageComponent
   ],
   imports: [
     BrowserModule,
