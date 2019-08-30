@@ -16,11 +16,12 @@ nav {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 83px;
   z-index: 3;
+  height: 5.4rem;
 }
 
 .container_1 {
+
   list-style: none;
   height: 85px;
   color: white;
@@ -30,9 +31,10 @@ nav {
 
 }
 
-.container_1>li {
-  margin-right: 65px;
+li {
   font-size: 17px;
+  margin-bottom: 1rem;
+  margin-right: 3rem;
 }
 
 a {
@@ -46,7 +48,6 @@ a:hover {
 
 
 .logo {
-
   margin-right: auto;
   cursor: pointer;
 }
@@ -56,7 +57,7 @@ a:hover {
 }
 
 
-.container_1>.button_1 {
+.button_1 {
   background-color: #1bc192;
   padding: 10px 16px 10px 16px;
   cursor: pointer;
@@ -65,30 +66,28 @@ a:hover {
 
 
 /* -----------------  START OF MEDIA QUERY NAVBAR ------------------- */
+.toggler {
+  display: none;
+  width: 43px;
+  height: 43px;
+  cursor: pointer;
+}
 
 
 @media screen and (max-width: 988px) {
 
   .container_1 {
     display: none !important;
-    /* flex-direction: column;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 365px; */
+  }
+
+  .toggler {
+    display: block;
   }
 
 
-  /* .logo {
-    margin-right: 77px;
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-  } */
-
-  /* .container_1>.button_1 {
-    padding-bottom: 18px;
-
-  } */
 
 }
 
@@ -223,6 +222,8 @@ a:hover {
 
 
 /* -----------------  START OF MEDIA QUERY FOOTER ------------------- */
+
+
 
 
 @media screen and (max-width: 900px) {
