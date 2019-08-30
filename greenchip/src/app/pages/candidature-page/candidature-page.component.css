@@ -46,7 +46,7 @@ p {
   width: 100%;
   height: 100%;
   background-color: black;
-  opacity: 0.8;
+  opacity: 0.6;
   background-size: cover;
   z-index: -1;
 }
@@ -146,8 +146,44 @@ option {
   border-radius: 8px !important;
   font-family: "Raleway";
   font-weight: 600;
+<<<<<<< HEAD
 
 
+
+
+}
+
+
+a:hover {
+
+
+  text-decoration: none;
+  color: white;
+
+}
+a:active {
+
+
+  text-decoration: none;
+  color: white;
+
+}
+a:link {
+
+
+  text-decoration: none;
+  color: white;
+
+}
+a:visited {
+
+=======
+>>>>>>> 3e06e03028bfcc7ed2671cf009437361ad27aa65
+
+  text-decoration: none;
+  color: white;
+
+}
 
 
 }
