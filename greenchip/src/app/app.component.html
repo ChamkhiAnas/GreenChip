@@ -12,17 +12,33 @@
 
   <!-- /* --------------------------- START OF NAVBAR  -------------------------------- */ -->
   <header>
-    <nav class="d-flex flex-row justify-content-center align-items-center">
-      <div class="logo ml-5"><a routerLink="/Acceuil"><img src="../assets/images/logo.png"></a></div>
-      <ul class="container_1 d-flex flex-row align-items-center justify-content-center">
-        <li> <a routerLink="/">A propos</a></li>
-        <li><a routerLink="/"> Formation</a></li>
-        <li><a routerLink="/Candidatures">Candidatures</a></li>
-        <li class="button_1">Inscris-Toi</li>
-      </ul>
-      <div class="toggler m-2" (click)="showNav()"><img src="../assets/images/arrow-down.png" alt="toggler"
-          class="w-100 h-100"></div>
+
+    <nav>
+      <div class="wrapper">
+        <div class="theContainer d-flex flex-row">
+          <!-- menu -->
+          <div class="navItems d-flex flex-column flex-md-row">
+            <div class="logo">
+              <a routerLink="/Acceuil"><img src="../assets/images/logo.png" style="width: 100%;"></a>
+            </div>
+            <div class="itemsList">
+              <ul>
+                <li> <a routerLink="/">A propos</a></li>
+                <li><a routerLink="/"> Formation</a></li>
+                <li><a routerLink="/Candidatures">Candidatures</a></li>
+                <li><button class="button_1">Inscris-Toi</button></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- menu Toggler -->
+          <div class="menuToggler">
+            <button (click)="openNav()"></button>
+          </div>
+        </div>
+      </div>
     </nav>
+
   </header>
   <!-- /* --------------------------- end OF NAVBAR  -------------------------------- */ -->
 

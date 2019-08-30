@@ -13,14 +13,16 @@ router.get('/subscribers', (req, res, next) => {
 router.post('/addsubscribers', (req, res, next) => {
     let newSubscriber = new Subs({
         lastName: req.body.lastName,
-        firsName: req.body.firsName,
+        firstName: req.body.firstName,
+        address: req.body.address,
         number: req.body.number,
         email: req.body.email,
+        campus: req.body.campus,
     });
 
     newSubscriber.save((err, result) => {
         if (err) {
-            res.status(500).send();
+            res.status(500).send(err);
 
         } else if (!result) {
             res.status(404).end();

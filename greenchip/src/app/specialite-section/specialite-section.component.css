@@ -124,5 +124,13 @@
     display: none;
   }
 
+  .spec-right {
+    width: 260%;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    border: white solid;
+    box-shadow: none;
+
+  }
 
 }

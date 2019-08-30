@@ -12,14 +12,11 @@ export class AppComponent implements OnInit {
   subs;
   constructor(private api_server: ApiService) {
   }
+  isOpen;
 
-  showNav() {
-    const navbar: HTMLElement = document.querySelector('.container_1');
-    navbar.style.display = 'block';
-    console.log('test');
-  }
 
   ngOnInit() {
+    this.isOpen = false;
 
     // ex of service methods ...
     // this.api_server.getSubscribers().subscribe(
@@ -28,6 +25,20 @@ export class AppComponent implements OnInit {
     //     console.log(data);
     //   }
     // );
+  }
+
+
+  openNav() {
+    let menu = document.querySelector('.itemsList ul');
+    if (this.isOpen) {
+      (<any>menu).style = "display:none"
+      this.isOpen = false
+    }
+    else {
+      (<any>menu).style = "display:flex"
+      this.isOpen = true
+
+    }
   }
 
 }
