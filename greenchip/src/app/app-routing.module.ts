@@ -9,10 +9,9 @@ const routes: Routes = [
   { path: 'Candidatures', component: CandidaturePageComponent },
   { path: 'Candidater', component: CandidaterPageComponent },
   { path: 'Acceuil', component: HomePageComponent },
+  { path: '**', component: HomePageComponent },
 
   { path: '', component: HomePageComponent },
-
-
 ];
 
 @NgModule({

@@ -28,6 +28,10 @@ const subscriberSchema = new Schema({
         required: true
 
     },
+    motivation: {
+        type: String,
+        required: true
+    },
     subscribeDate: {
         type: Date,
         default: Date.now,

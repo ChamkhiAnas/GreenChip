@@ -9,72 +9,8 @@ html {
 }
 
 
+
 /* --------------------------- START OF NAVBAR  -------------------------------- */
-/* 
-nav {
-  background-color: black;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  height: fit-content;
-  z-index: 3;
-  font-family: "Raleway";
-}
-
-.nav-cont {
-  height: fit-content;
-  width: 100%;
-}
-
-.container_1 {
-  display: flex;
-  flex-direction: column;
-  list-style: none;
-  color: white;
-  font-family: "Raleway";
-  font-weight: 700;
-  margin-bottom: 0;
-
-}
-
-li {
-  font-size: 17px;
-  margin-bottom: 1rem;
-  margin-right: 3rem;
-}
-
-a {
-  text-decoration: none;
-  color: white;
-}
-
-a:hover {
-  color: #1bc192;
-}
-
-
-.logo {
-  margin-right: auto;
-  cursor: pointer;
-}
-
-.logo img {
-  width: 190px;
-}
-
-
-.button_1 {
-  background-color: #1bc192;
-  padding: 10px 16px 10px 16px;
-  cursor: pointer;
-}
-
-
-
-.toggler {
-  display: none;
-  cursor: pointer;
-} */
 
 header {
   width: 100%;
@@ -115,7 +51,7 @@ nav .wrapper .theContainer .navItems .logo {
   margin-right: auto;
   cursor: pointer;
   margin-top: 29px;
-  margin-left: 1rem;
+  margin-left: 3rem;
 }
 
 nav .wrapper .theContainer .navItems .itemsList {
@@ -139,9 +75,10 @@ nav .wrapper .theContainer .navItems .itemsList ul li a {
   text-decoration: none;
   color: white;
   font-size: 17px;
+  font-weight: 600;
 }
 
-a:hover {
+nav .wrapper .theContainer .navItems .itemsList ul li a:hover {
   color: #1bc192;
 }
 
@@ -166,7 +103,13 @@ a:hover {
   border: none;
   cursor: pointer;
   color: white;
+  font-weight: 600;
+  position: relative;
+  bottom: 10px;
 }
+
+/* -----------------  START OF MEDIA QUERY NAVBAR ------------------- */
+
 
 @media screen and (min-width:819px) {
   nav .wrapper .theContainer .navItems .itemsList ul {
@@ -198,37 +141,161 @@ a:hover {
 
 
 
-
-
-
-/* -----------------  START OF MEDIA QUERY NAVBAR ------------------- */
-
-/* 
-
-@media screen and (max-width: 988px) {
-
-  .container_1 {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .toggler {
-    display: block;
-  }
-
-
-
-} */
-
 /* --------------------------- END OF NAVBAR  -------------------------------- */
 
 
 
+/*---------templating the modal----------*/
+.modal-logo {
+  width: 8rem;
+}
+
+*,
+:before,
+:after {
+  box-sizing: border-box;
+}
+
+
+form {
+  width: 320px;
+  margin: 45px auto;
+}
+
+form hr.sep {
+  background: #1bc192;
+  box-shadow: none;
+  border: none;
+  height: 2px;
+  width: 25%;
+  margin: 0px auto 45px auto;
+}
+
+
+.group {
+  position: relative;
+  margin: 45px 0;
+}
+
+textarea {
+  resize: none;
+}
 
 
 
+input,
+textarea,
+select {
+  background: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  display: block;
+  width: 15rem;
+  border: none;
+  border-bottom: 1px solid #c6c6c6;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: #1bc192;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label,
+select:focus~label,
+select:valid~label {
+  top: -14px;
+  font-size: 12px;
+  color: #1bc192;
+}
+
+input:focus~.bar:before,
+textarea:focus~.bar:before {
+  width: 320px;
+}
+
+label {
+  color: #c6c6c6;
+  font-size: 16px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 300ms ease all;
+}
+
+.bar {
+  position: relative;
+  display: block;
+  width: 320px;
+}
+
+.bar:before {
+  content: "";
+  height: 45px;
+  width: 0px;
+  bottom: 0px;
+  left: -2px;
+  position: absolute;
+  transition: 300ms ease all;
+  border: 2px solid #1bc192;
+}
+
+.btn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: none;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.btn:hover {
+  color: #8b8b8b;
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.18), 0 5px 5px rgba(0, 0, 0, 0.12);
+}
+
+.btn.btn-link {
+  background: #1bc192;
+  color: #d3eafd;
+}
+
+.btn.btn-link:hover {
+  background: #1bc192;
+  color: #deeffd;
+}
+
+.btn.btn-submit {
+  background: #1bc192;
+  color: white;
+}
+
+.btn.btn-submit:hover {
+  background: #1bc192;
+  color: #deeffd;
+}
+
+.btn.btn-cancel {
+  background: #eee;
+}
+
+.btn.btn-cancel:hover {
+  background: #e1e1e1;
+  color: #8b8b8b;
+}
+
+.btn-box {
+  text-align: center;
+  margin: 50px 0;
+}
 
 
 

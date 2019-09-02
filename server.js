@@ -4,7 +4,7 @@ var bodyparser = require('body-parser');
 var cors = require('cors');
 var path = require('path');
 
-var app = express();
+const app = express();
 
 const route = require('./routes/routes')
 

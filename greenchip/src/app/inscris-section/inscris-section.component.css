@@ -43,21 +43,18 @@
 }
 
 .container_3>.c_3_2>h1 {
-
-
-
   color: #ffffff;
   font-family: "Poppins";
   font-weight: bold;
   font-size: 16px;
   padding-right: 2px;
-  padding-top: 29px;
+  padding-top: 25px;
   letter-spacing: 1px;
   background-color: #1bc192;
   width: 265px;
   height: 66px;
   border-radius: 51px;
-  padding-left: 69px;
+  padding-left: 80px;
   z-index: 2;
   margin-bottom: 0;
 }
