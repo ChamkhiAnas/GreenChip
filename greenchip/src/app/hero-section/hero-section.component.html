@@ -16,7 +16,79 @@
     <div class="r-hero">
       <h1>Rejoindre la génération de Demain</h1>
       <h4>Analyser ta vision<br>créer ton avenir</h4>
-      <button class="text-uppercase"> Dès Maintenant</button>
+      <button class="text-uppercase" (click)="openModalWithClass(template1)"> Dès Maintenant</button>
     </div>
   </div>
+
+
+
+  <!-- template modal  -->
+  <ng-template #template1>
+
+    <div class="modal-header">
+      <div class="modal-logo"><img src="../assets/images/logo.png" alt="logo" class="w-100"></div>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form [formGroup]="candidatform" (ngSubmit)="onSubmit()">
+        <div class="d-flex flex-wrap">
+
+          <div class="group">
+            <input type="text" formControlName="lastname" required /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Nom</label>
+          </div>
+
+          <div class="group">
+            <input type="text" formControlName="firstname" required /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Prénom</label>
+          </div>
+
+          <div class="group">
+            <input type="text" formControlName="address" required="required" /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Adresse</label>
+          </div>
+
+          <div class="group">
+            <input type="email" formControlName="email" required="required" /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Email</label>
+          </div>
+
+          <div class="group">
+            <input type="text" formControlName="number" required="required" /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Numéro de téléphone</label>
+          </div>
+
+          <div class="group">
+            <select formControlName="campus" class="campus-select" required="required">
+
+              <option value="Oujda">Oujda</option>
+              <option value="Berkane">Berkane</option>
+              <option value="Jerada">Jerada</option>
+            </select>
+            <label>Campus</label>
+          </div>
+
+          <div class="group">
+            <textarea type="textarea" rows="4" formControlName="motivation" required="required"></textarea><span
+              class="highlight"></span>
+            <label>Motivation</label>
+          </div>
+        </div>
+
+        <div class="btn-box">
+          <button class="btn btn-submit mr-2" type="submit" [disabled]="!candidatform.valid">Validé</button>
+          <button class="btn btn-cancel" type="button" (click)="modalRef.hide()">Annuler</button>
+        </div>
+
+      </form>
+    </div>
+  </ng-template>
+
 </section>

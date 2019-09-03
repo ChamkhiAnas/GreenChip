@@ -157,12 +157,12 @@ nav .wrapper .theContainer .navItems .itemsList ul li a:hover {
 }
 
 
-form {
-  width: 320px;
-  margin: 45px auto;
+.modal-body form {
+  width: 100%;
+  margin: 0;
 }
 
-form hr.sep {
+.modal-body form hr.sep {
   background: #1bc192;
   box-shadow: none;
   border: none;
@@ -176,12 +176,6 @@ form hr.sep {
   position: relative;
   margin: 45px 0;
 }
-
-textarea {
-  resize: none;
-}
-
-
 
 input,
 textarea,

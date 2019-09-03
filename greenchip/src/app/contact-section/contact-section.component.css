@@ -5,7 +5,14 @@
   background-color: black;
 }
 
+.contact-us form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .email-bar {
+  background-color: white;
   margin: 4px;
   padding: 25px;
   width: 16rem;
@@ -19,6 +26,7 @@
 }
 
 .message-bar {
+  background-color: white;
   margin: 4px;
   padding: 25px;
   width: 31rem;
@@ -39,8 +47,4 @@
   border-radius: 16px;
   margin: 4px;
   padding: 12px;
-}
-
-.send-button:active {
-  background: linear-gradient(to right top, #1BC193, 70%);
 }

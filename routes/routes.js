@@ -1,9 +1,99 @@
 const express = require('express');
 const router = express.Router();
+const jwt = require('jsonwebtoken');
+const passport = require('passport');
+
 const nodemailer = require('nodemailer');
 require('dotenv').config();
 
 const Subs = require('../models/subscribers');
+const Users = require('../models/admins');
+
+
+process.env.SECRET_KEY = 'secret';
+
+
+
+//routes ...
+router.post('/register', (req, res) => {
+
+    let newUser = new Users({
+        user: req.body.user,
+        password: req.body.password
+    });
+
+    Users.addUser(newUser, (err, user) => {
+        if (err) {
+            res.json({
+                success: false,
+                msg: 'failed to register'
+            });
+        } else {
+            res.json({
+                success: true,
+                msg: 'nice !'
+            })
+        }
+
+    })
+})
+
+
+
+router.post('/admin', (req, res) => {
+
+    const user = req.body.user;
+    const password = req.body.password;
+
+    Users.getUserById(user, (err, user) => {
+        if (err) throw err;
+        if (!user) {
+            return res.json({
+                success: false,
+                msg: 'user not found'
+            });
+        }
+
+        Users.comparePassword(password, user.password, (err, isMatch) => {
+            if (err) throw err;
+            if (isMatch) {
+                const token = jwt.sign(user.toJSON(), 'admin', {
+                    expiresIn: 604800 // 1 semaine
+                });
+
+                res.json({
+                    success: true,
+                    token: 'JWT' + token,
+                    user: {
+                        id: user._id,
+                        user: user.user
+                    }
+                });
+            } else {
+                return res.json({
+                    success: false,
+                    msg: "wrong password"
+                });
+            }
+        });
+    });
+
+});
+
+
+
+router.get('/dashboard', passport.authenticate('jwt', {
+    session: false
+}), (req, res, next) => {
+    res.json({
+        user: req.user
+    });
+})
+
+
+
+
+// candidats ....
 
 router.get('/subscribers', (req, res, next) => {
     Subs.find((err, subs) => {
@@ -40,6 +130,11 @@ router.post('/addsubscribers', (req, res, next) => {
     })
 });
 
+
+
+
+//message mail ...
+
 router.post('/sendingmail', (req, res) => {
 
     let newMessage = {
@@ -74,7 +169,7 @@ router.post('/sendingmail', (req, res) => {
         }
     });
 
-    // res.redirect('/');
+    res.redirect('/');
 });
 
 module.exports = router;

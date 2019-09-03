@@ -7,9 +7,12 @@ import { from } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class AppComponent implements OnInit {
+
+
   title = 'greenchip';
   subs;
   isOpen;
@@ -77,6 +80,8 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.isOpen = false;
+
+    console.log(" **********Made by********* \n \n Khalil Kessa && Anas Chamkhi \n Honorable mentions:  Alae Essaki \n\n  ************:DD*********** ");
 
   }
 

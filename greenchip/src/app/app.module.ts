@@ -31,6 +31,7 @@ import { BerkaneComponent } from './pages/berkane/berkane.component';
 import { JeradaComponent } from './pages/jerada/jerada.component';
 import { CandidaterPageComponent } from './pages/candidater-page/candidater-page.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { AdminLoginComponent } from './admin-login/admin-login.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     BerkaneComponent,
     JeradaComponent,
     CandidaterPageComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    AdminLoginComponent
   ],
   imports: [
     BrowserModule,

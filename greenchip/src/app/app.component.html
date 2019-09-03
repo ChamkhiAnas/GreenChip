@@ -62,7 +62,7 @@
     <div class="modal-body">
 
       <form [formGroup]="candidatform" (ngSubmit)="onSubmit()">
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-wrap ml-2">
 
           <div class="group">
             <input type="text" formControlName="lastname" required /><span class="highlight"></span><span
@@ -109,13 +109,11 @@
               class="highlight"></span>
             <label>Motivation</label>
           </div>
-
-          <div class="btn-box">
-            <button class="btn btn-submit mr-2" type="submit" [disabled]="!candidatform.valid">Validé</button>
-            <button class="btn btn-cancel" type="button" (click)="modalRef.hide()">Annuler</button>
-          </div>
         </div>
-
+        <div class="btn-box">
+          <button class="btn btn-submit mr-2" type="submit" [disabled]="!candidatform.valid">Validé</button>
+          <button class="btn btn-cancel" type="button" (click)="modalRef.hide()">Annuler</button>
+        </div>
       </form>
 
     </div>

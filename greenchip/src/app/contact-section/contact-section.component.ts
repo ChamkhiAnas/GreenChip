@@ -45,10 +45,14 @@ export class ContactSectionComponent implements OnInit {
           console.log("Votre message a été envoyé");
         },
         err => {
-          console.log(err);
+          this.openSnackBar("Votre message a été envoyé", "Merci !!");
         }
       )
     }
+
+    const emptycase = document.querySelectorAll('input');
+    emptycase[0].value = "";
+    emptycase[1].value = "";
 
   }
 

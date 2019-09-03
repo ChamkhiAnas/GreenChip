@@ -20,8 +20,8 @@
             <option *ngIf="nagasa == 4">{{courses[0]}}</option>
             <option *ngIf="nagasa == 4">{{courses[1]}}</option>
             <option *ngIf="nagasa == 4">{{courses[2]}}</option>
-
           </select>
+
         </div>
         <button id="button"><a routerLink="/Candidater">Guide du candidat</a></button>
       </form>
@@ -31,5 +31,15 @@
 </section>
 
 
-
-<app-autres></app-autres>
+<div *ngIf="nagasa == 1">
+  <app-oujda></app-oujda>
+</div>
+<div *ngIf="nagasa == 2">
+  <app-jerada></app-jerada>
+</div>
+<div *ngIf="nagasa == 3">
+  <app-berkane></app-berkane>
+</div>
+<div *ngIf="nagasa == 4">
+  <app-autres></app-autres>
+</div>
