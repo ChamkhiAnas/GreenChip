@@ -34,6 +34,11 @@
   font-weight: 500;
 }
 
+.left-card button a {
+  text-decoration: none;
+  color: white;
+}
+
 .right-card {
   padding: 2rem 6rem 4rem 3rem;
   background-color: #EFEDEE;
@@ -66,6 +71,12 @@
   font-family: "Noah";
   font-weight: bold;
 }
+
+.right-card button a {
+  text-decoration: none;
+  color: white;
+}
+
 
 
 /* responsive */

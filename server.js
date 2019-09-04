@@ -52,7 +52,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // testing server
 app.get('/', (req, res) => {
-    res.send('the ultimate bobo');
+    res.send('server is alive !');
 })
 
 app.listen(port, () => {

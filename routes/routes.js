@@ -88,25 +88,16 @@ router.get('/dashboard', passport.authenticate('jwt', {
     });
 });
 
-// router.get('/logout', (req, res) => {
-//     req.logout();
-//     res.redirect('/login');
-// });
-
-
-
-
-
-
-
-// candidats ....
-
-router.get('/subscribers', (req, res, next) => {
+router.get('/subscribers', passport.authenticate('jwt', {
+    session: false
+}), (req, res, next) => {
     Subs.find((err, subs) => {
-        res.json(subs);
-    })
-
+        res.json(subs)
+    });
 });
+
+
+
 
 router.post('/addsubscribers', (req, res, next) => {
     let newSubscriber = new Subs({

@@ -13,7 +13,6 @@ module.exports = function (passport) {
     }
 
     passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
-        console.log(jwt_payload)
         Users.getUserById(jwt_payload.user, (err, user) => {
             if (err) {
                 return done(err, false);
@@ -26,4 +25,5 @@ module.exports = function (passport) {
 
         });
     }))
+
 }

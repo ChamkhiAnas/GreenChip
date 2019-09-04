@@ -6,8 +6,8 @@ import { CandidaterPageComponent } from './pages/candidater-page/candidater-page
 
 
 const routes: Routes = [
-  { path: 'Candidatures', component: CandidaturePageComponent },
-  { path: 'Candidater', component: CandidaterPageComponent },
+  { path: 'candidatures', component: CandidaturePageComponent },
+  { path: 'candidater', component: CandidaterPageComponent },
   { path: 'Acceuil', component: HomePageComponent },
   { path: '**', component: HomePageComponent },
 
