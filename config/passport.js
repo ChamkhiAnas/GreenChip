@@ -4,15 +4,20 @@ const Users = require('../models/admins');
 
 
 module.exports = function (passport) {
-    let opts = {};
-    opts.jwtFormRequest = ExtractJwt.fromAuthHeader();
-    opts.secret0rKey = 'admin';
+
+
+
+    const opts = {
+        jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+        secretOrKey: 'secret'
+    }
+
     passport.use(new JwtStrategy(opts, (jwt_payload, done) => {
-        Users.getUserById(jwt_payload._id, (err, user) => {
+        console.log(jwt_payload)
+        Users.getUserById(jwt_payload.user, (err, user) => {
             if (err) {
                 return done(err, false);
             }
-
             if (user) {
                 return done(null, user)
             } else {

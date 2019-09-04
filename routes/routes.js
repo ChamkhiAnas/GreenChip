@@ -36,11 +36,11 @@ router.post('/register', (req, res) => {
         }
 
     })
-})
+});
 
 
 
-router.post('/admin', (req, res) => {
+router.post('/login', (req, res) => {
 
     const user = req.body.user;
     const password = req.body.password;
@@ -57,13 +57,13 @@ router.post('/admin', (req, res) => {
         Users.comparePassword(password, user.password, (err, isMatch) => {
             if (err) throw err;
             if (isMatch) {
-                const token = jwt.sign(user.toJSON(), 'admin', {
+                const token = jwt.sign(user.toJSON(), 'secret', {
                     expiresIn: 604800 // 1 semaine
                 });
 
                 res.json({
                     success: true,
-                    token: 'JWT' + token,
+                    token: "Bearer " + token,
                     user: {
                         id: user._id,
                         user: user.user
@@ -80,15 +80,21 @@ router.post('/admin', (req, res) => {
 
 });
 
-
-
 router.get('/dashboard', passport.authenticate('jwt', {
     session: false
 }), (req, res, next) => {
     res.json({
         user: req.user
     });
-})
+});
+
+// router.get('/logout', (req, res) => {
+//     req.logout();
+//     res.redirect('/login');
+// });
+
+
+
 
 
 
