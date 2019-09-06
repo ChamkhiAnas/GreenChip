@@ -17,7 +17,7 @@ export class ContactService {
         'Content-Type': 'application/json'
       })
     }
-    return this.httpClient.post('http://localhost:3200/api/sendingmail', mail, httphead)
+    return this.httpClient.post('api/sendingmail', mail, httphead)
   }
 
 }

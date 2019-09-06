@@ -51,8 +51,8 @@ export class HeroSectionComponent implements OnInit {
       lastName: this.candidatform.controls['lastname'].value,
       firstName: this.candidatform.controls['firstname'].value,
       address: this.candidatform.controls['address'].value,
-      email: this.candidatform.controls['email'].value,
       number: this.candidatform.controls['number'].value,
+      email: this.candidatform.controls['email'].value,
       campus: this.candidatform.controls['campus'].value,
       motivation: this.candidatform.controls['motivation'].value
     };

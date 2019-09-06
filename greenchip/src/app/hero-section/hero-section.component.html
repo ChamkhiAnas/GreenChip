@@ -1,22 +1,25 @@
 <section class="hero-section">
   <div class="video-holder d-flex align-items-center">
 
-    <div class="l-hero">
+    <video autoplay muted loop id="myVideo">
+      <source src="../../assets/video/herovideo.mp4" type="video/mp4">
+    </video>
 
+    <div class="l-hero">
       <div class="outer-circle">
         <img src="../../assets/images/eclipse1.png" alt="outer circle" class="w-100 h-100 f-circle">
         <div class="inner-circle"><img src="../../assets/images/eclipse2.png" alt="inner circle"
             class="s-circle w-100 h-100">
-          <div class="play-button"><img src="../../assets/images/play button.png" alt="button" class="w-100 h-100">
+          <div class="play-button"><img src="../../assets/images/playbutton.png" alt="button" class="w-100 h-100">
           </div>
         </div>
       </div>
 
     </div>
     <div class="r-hero">
-      <h1>Rejoindre la génération de Demain</h1>
-      <h4>Analyser ta vision<br>créer ton avenir</h4>
-      <button class="text-uppercase" (click)="openModalWithClass(template1)"> Dès Maintenant</button>
+      <h1>Formations aux Métiers Techniques du Numérique</h1>
+      <h4>Analyses ta vision<br>Crées ton avenir</h4>
+      <button class="text-uppercase" (click)="openModalWithClass(template1)"> Je candidate . . .</button>
     </div>
   </div>
 
@@ -33,7 +36,7 @@
     </div>
     <div class="modal-body">
       <form [formGroup]="candidatform" (ngSubmit)="onSubmit()">
-        <div class="d-flex flex-wrap">
+        <div class="d-flex flex-wrap ml-2">
 
           <div class="group">
             <input type="text" formControlName="lastname" required /><span class="highlight"></span><span
@@ -66,7 +69,7 @@
           </div>
 
           <div class="group">
-            <select formControlName="campus" class="campus-select" required="required">
+            <select formControlName="campus" class="campus-select" required>
 
               <option value="Oujda">Oujda</option>
               <option value="Berkane">Berkane</option>
@@ -74,19 +77,16 @@
             </select>
             <label>Campus</label>
           </div>
-
-          <div class="group">
-            <textarea type="textarea" rows="4" formControlName="motivation" required="required"></textarea><span
-              class="highlight"></span>
-            <label>Motivation</label>
-          </div>
         </div>
-
+        <div class="group d-flex justify-content-center g-area">
+          <textarea type="textarea" rows="4" formControlName="motivation" required="required"></textarea><span
+            class="highlight"></span>
+          <label>Motivation</label>
+        </div>
         <div class="btn-box">
           <button class="btn btn-submit mr-2" type="submit" [disabled]="!candidatform.valid">Validé</button>
           <button class="btn btn-cancel" type="button" (click)="modalRef.hide()">Annuler</button>
         </div>
-
       </form>
     </div>
   </ng-template>

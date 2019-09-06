@@ -1,7 +1,7 @@
 .container_3 {
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 4fr;
   width: 100%;
   background-image: url(../../assets/images/inscris-section.png);
   height: 169px;
@@ -18,19 +18,12 @@
 
 }
 
-.container_3>.c_3_1>h1 {
-
-
-  color: #ffffff;
-  font-family: "Poppins";
-  font-weight: bold;
-  font-size: 35.2px;
-  letter-spacing: 1px;
-  padding-top: 0px;
-  margin-top: 0px;
-
+.container_3>.c_3_1>img {
+  width: 6rem;
+  position: relative;
+  left: 11rem;
+  bottom: 12px;
 }
-
 
 
 .container_3>.c_3_2 {
@@ -95,17 +88,9 @@
   }
 
 
-  .container_3>.c_3_1>h1 {
-
-
-    padding-top: 32px;
-    margin-top: 0px;
-    font-size: 21px;
-
+  .container_3>.c_3_1>img {
+    display: none;
   }
-
-
-
 
 }
 

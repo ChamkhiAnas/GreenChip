@@ -10,7 +10,7 @@ export class ApiService {
   constructor(private httpClient: HttpClient) { }
 
   getSubscribers() {
-    return this.httpClient.get('http://localhost:3200/api/subscribers');
+    return this.httpClient.get('api/subscribers');
   }
   addSubscribers(subscriber) {
     let httpheader = {
@@ -18,7 +18,7 @@ export class ApiService {
         'Content-Type': 'application/json'
       })
     }
-    return this.httpClient.post('http://localhost:3200/api/addsubscribers', subscriber, httpheader)
+    return this.httpClient.post('api/addsubscribers', subscriber, httpheader)
   }
 
 }

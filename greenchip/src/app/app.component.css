@@ -47,7 +47,7 @@ nav .wrapper .theContainer .navItems {
 }
 
 nav .wrapper .theContainer .navItems .logo {
-  width: 12rem;
+  width: 11rem;
   margin-right: auto;
   cursor: pointer;
   margin-top: 29px;
@@ -91,7 +91,7 @@ nav .wrapper .theContainer .navItems .itemsList ul li a:hover {
   border: none;
   background: url('../assets/images/arrow-down.png') center center no-repeat;
   background-size: cover;
-  width: 31px;
+  width: 25px;
   height: 20px;
   margin-top: 37px;
   margin-right: 23px;
@@ -129,16 +129,17 @@ nav .wrapper .theContainer .navItems .itemsList ul li a:hover {
 
   nav .wrapper .theContainer .navItems .logo {
     margin-bottom: 10px;
+    margin-left: 0;
+    width: 7rem;
   }
 
   nav .wrapper .theContainer {
-    padding-top: 20px;
+
+    padding-top: 0px;
     padding-right: 20px;
     padding-left: 20px;
   }
 }
-
-
 
 
 /* --------------------------- END OF NAVBAR  -------------------------------- */
@@ -160,6 +161,7 @@ nav .wrapper .theContainer .navItems .itemsList ul li a:hover {
 .modal-body form {
   width: 100%;
   margin: 0;
+  font-family: "Noah";
 }
 
 .modal-body form hr.sep {
@@ -172,13 +174,13 @@ nav .wrapper .theContainer .navItems .itemsList ul li a:hover {
 }
 
 
-.group {
+.modal-body form .group {
   position: relative;
   margin: 45px 0;
+  margin-left: 38px;
 }
 
-input,
-textarea,
+form input,
 select {
   background: none;
   color: black;
@@ -188,6 +190,18 @@ select {
   width: 15rem;
   border: none;
   border-bottom: 1px solid #c6c6c6;
+}
+
+form textarea {
+  background: none;
+  color: black;
+  font-size: 18px;
+  padding: 10px 10px 0 5px;
+  display: block;
+  width: 36rem;
+  border: none;
+  border-bottom: 1px solid #c6c6c6;
+
 }
 
 input:focus,

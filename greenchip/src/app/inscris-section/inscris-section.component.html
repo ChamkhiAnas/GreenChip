@@ -1,7 +1,7 @@
 <section class="inscris">
   <div class="container_3">
     <div class="c_3_1">
-      <h1>Prêt pour le monde réel ?</h1>
+      <img src="../../assets/images/right-arrow.png" alt="flèche de direction">
     </div>
 
     <div class="c_3_2">
@@ -56,8 +56,9 @@
             <label>Numéro de téléphone</label>
           </div>
 
+
           <div class="group">
-            <select formControlName="campus" class="campus-select" required="required">
+            <select formControlName="campus" class="campus-select" required>
 
               <option value="Oujda">Oujda</option>
               <option value="Berkane">Berkane</option>
@@ -65,12 +66,11 @@
             </select>
             <label>Campus</label>
           </div>
-
-          <div class="group">
-            <textarea type="textarea" rows="4" formControlName="motivation" required="required"></textarea><span
-              class="highlight"></span>
-            <label>Motivation</label>
-          </div>
+        </div>
+        <div class="group d-flex justify-content-center g-area">
+          <textarea type="textarea" rows="4" formControlName="motivation" required="required"></textarea><span
+            class="highlight"></span>
+          <label>Motivation</label>
         </div>
         <div class="btn-box">
           <button class="btn btn-submit mr-2" type="submit" [disabled]="!candidatform.valid">Validé</button>
@@ -80,6 +80,5 @@
 
     </div>
   </ng-template>
-
 
 </section>

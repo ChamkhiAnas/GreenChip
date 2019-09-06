@@ -15,14 +15,16 @@ const subscriberSchema = new Schema({
         required: true
     },
     number: {
-        type: Number,
+        type: String,
         required: true,
     },
+
     email: {
         type: String,
         required: true,
         unique: true
     },
+
     campus: {
         type: String,
         required: true

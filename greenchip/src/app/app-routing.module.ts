@@ -5,12 +5,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
 import { CandidaterPageComponent } from './pages/candidater-page/candidater-page.component';
 
 
+
 const routes: Routes = [
   { path: 'candidatures', component: CandidaturePageComponent },
   { path: 'candidater', component: CandidaterPageComponent },
-  { path: 'Acceuil', component: HomePageComponent },
-  { path: '**', component: HomePageComponent },
-
   { path: '', component: HomePageComponent },
 ];
 

@@ -120,7 +120,6 @@ router.post('/addsubscribers', (req, res, next) => {
 
         } else {
             res.status(200).json({
-                msg: "bobo is alive",
                 datasent: result
             })
         }
@@ -151,7 +150,7 @@ router.post('/sendingmail', (req, res) => {
     });
 
     var mailOption = {
-        from: '------------Al Jisr-----------',
+        from: '------------Greenchip 2.0-----------',
         to: 'greenchip2.0@gmail.com',
         subject: "un message d'un visiteur",
         text: "un message de " + newMessage.email + "\n" + newMessage.message,

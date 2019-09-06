@@ -28,13 +28,6 @@ export class AppComponent implements OnInit {
   });
 
 
-  email = new FormControl('', [Validators.required, Validators.email]);
-
-  getErrorMessage() {
-    return this.email.hasError('required') ? 'Vous devez saisir un email valide' :
-      this.email.hasError('email') ? 'email invalide' :
-        '';
-  }
 
   constructor(private _apiservice: ApiService, private modalService: BsModalService) {
   }
@@ -56,8 +49,8 @@ export class AppComponent implements OnInit {
       lastName: this.candidatform.controls['lastname'].value,
       firstName: this.candidatform.controls['firstname'].value,
       address: this.candidatform.controls['address'].value,
-      email: this.candidatform.controls['email'].value,
       number: this.candidatform.controls['number'].value,
+      email: this.candidatform.controls['email'].value,
       campus: this.candidatform.controls['campus'].value,
       motivation: this.candidatform.controls['motivation'].value
     };
@@ -71,6 +64,9 @@ export class AppComponent implements OnInit {
           if (err.error.code == 11000) {
             alert("vous avez deja candidater " + this.candidatform.controls['lastname'].value + ' ' + this.candidatform.controls['firstname'].value)
             this.modalRef.hide();
+          }
+          else {
+            alert("merci de saisir tous les champs");
           }
           console.log(err)
         })
@@ -97,6 +93,12 @@ export class AppComponent implements OnInit {
       this.isOpen = true
 
     }
+  }
+
+  closeNave() {
+    let menu = document.querySelector('.itemsList ul');
+    (<any>menu).style = "display:none"
+    this.isOpen = false;
   }
 
 }

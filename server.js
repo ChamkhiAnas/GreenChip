@@ -50,10 +50,31 @@ app.use('/api', route);
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// testing server
-app.get('/', (req, res) => {
-    res.send('server is alive !');
+app.get('/admin', (req, res) => {
+    res.render(__dirname, 'dashboard');
 })
+
+// testing server
+const allowedExt = [
+    '.js',
+    '.ico',
+    '.css',
+    '.png',
+    '.jpg',
+    '.woff2',
+    '.woff',
+    '.ttf',
+    '.svg',
+];
+
+app.get('*', (req, res) => {
+    if (allowedExt.filter(ext => req.url.indexOf(ext) > 0).length > 0) {
+        res.sendFile(path.resolve(`./public/${req.url}`));
+    } else {
+        res.sendFile(path.resolve('./public/index.html'));
+    }
+});
+
 
 app.listen(port, () => {
     console.log('server started at port: ' + port);
