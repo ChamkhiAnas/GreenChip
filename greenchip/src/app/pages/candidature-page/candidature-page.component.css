@@ -113,6 +113,12 @@ select {
 }
 
 
+select:focus {
+
+
+  outline:0;
+}
+
 option {
   background-color: #1BC193;
   color: white;
@@ -146,7 +152,6 @@ option {
   border-radius: 8px !important;
   font-family: "Raleway";
   font-weight: 600;
-<<<<<<< HEAD
 
 
 
@@ -177,13 +182,9 @@ a:link {
 }
 a:visited {
 
-=======
->>>>>>> 3e06e03028bfcc7ed2671cf009437361ad27aa65
-
   text-decoration: none;
   color: white;
 
 }
 
 
-}
