@@ -62,9 +62,10 @@ p {
 }
 
 .center-box button {
-  margin-left: 7rem;
+  font-family: "Raleway";
   background: #1BC193;
-  padding: 18px 65px;
+  padding: 18px 34px;
+  margin-right: 19px;
   font-size: 16px;
   cursor: pointer;
   text-align: center;
@@ -73,7 +74,7 @@ p {
   color: #fff;
   border: none;
   border-radius: 20px;
-  font-weight: bold;
+  font-weight: 600;
   box-shadow: 0 9px #1AA57E;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -130,11 +131,11 @@ option {
 }
 
 #course {
-  padding: 7px 101px 7px 10px;
+  padding: 7px 71px 7px 10px;
 }
 
 
-#button {
+/* #button {
 
   position: relative;
   top: 10px;
@@ -152,11 +153,7 @@ option {
   border-radius: 8px !important;
   font-family: "Raleway";
   font-weight: 600;
-
-
-
-
-}
+} */
 
 
 a:hover {
@@ -166,25 +163,21 @@ a:hover {
   color: white;
 
 }
+
 a:active {
-
-
   text-decoration: none;
   color: white;
 
 }
+
 a:link {
-
-
   text-decoration: none;
   color: white;
 
 }
+
 a:visited {
-
   text-decoration: none;
   color: white;
 
 }
-
-

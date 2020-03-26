@@ -1,5 +1,4 @@
 #second {
-  border-top: #1BC193 solid 6px;
   padding-top: 5rem;
   margin-bottom: 5rem;
 }
@@ -23,6 +22,10 @@
   font-family: "Noah";
 }
 
+.left-card p span {
+  color: #1BC193;
+}
+
 .left-card button {
   background-color: #1BC193;
   width: 12rem;
@@ -32,6 +35,11 @@
   font-family: "Noah";
   font-size: 19px;
   font-weight: 500;
+}
+
+.left-card button a {
+  text-decoration: none;
+  color: white;
 }
 
 .right-card {
@@ -66,6 +74,12 @@
   font-family: "Noah";
   font-weight: bold;
 }
+
+.right-card button a {
+  text-decoration: none;
+  color: white;
+}
+
 
 
 /* responsive */

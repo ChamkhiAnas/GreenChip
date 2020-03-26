@@ -2,28 +2,33 @@
   <div class="upper-part">
     <div class="center-box d-flex justify-content-center align-items-center flex-column">
       <h2>Candidater à une formation</h2>
-      <p>Vous pouvez maintenant choisir parmis nos <span>4</span> formations déployés dans la région de Oujda</p>
+      <p>Vous pouvez maintenant choisir parmis nos <span>3</span> formations déployés dans la région de Oujda</p>
 
       <form [formGroup]="selectedCity">
-        <div class="d-flex flex-row flex-wrap m-3 ">
-          <select class="mr-4 mb-3" formControlName="city" id="city">
-            <option value="" disabled selected>J'habite à ...</option>
-            <option *ngFor="let city of cities" [value]="city.id">{{city.name}}</option>
-          </select>
-          <select formControlName="course" id="course" class="mb-3">
-            <option value="" disabled selected>Je veux devenir un ...</option>
+        <div class="d-flex flex-column align-items-center">
+          <div class="d-flex flex-column align-items-center flex-md-row m-3 ">
+            <select class="mr-4 mb-3" formControlName="city" id="city">
+              <option value="" disabled selected>J'habite à ...</option>
+              <option *ngFor="let city of cities" [value]="city.id">{{city.name}}</option>
+            </select>
+            <select formControlName="course" id="course" class="mb-3 mr-4">
+              <option value="" disabled selected>Je veux devenir un ...</option>
 
-            <option *ngIf="nagasa == 1">{{courses[0]}}</option>
-            <option *ngIf="nagasa == 2">{{courses[1]}}</option>
-            <option *ngIf="nagasa == 3">{{courses[2]}}</option>
+              <option *ngIf="nagasa == 1">{{courses[0]}}</option>
+              <option *ngIf="nagasa == 2">{{courses[1]}}</option>
+              <option *ngIf="nagasa == 3">{{courses[2]}}</option>
 
-            <option *ngIf="nagasa == 4">{{courses[0]}}</option>
-            <option *ngIf="nagasa == 4">{{courses[1]}}</option>
-            <option *ngIf="nagasa == 4">{{courses[2]}}</option>
-
-          </select>
+              <option *ngIf="nagasa == 4">{{courses[0]}}</option>
+              <option *ngIf="nagasa == 4">{{courses[1]}}</option>
+              <option *ngIf="nagasa == 4">{{courses[2]}}</option>
+            </select>
+          </div>
+          <button><a routerLink="/candidater">Guide du candidat</a></button>
         </div>
+<<<<<<< HEAD
         <a routerLink="/Candidater"><button class="ml-5" id="button">Guide du candidature</button></a>
+=======
+>>>>>>> baff5300ba8172f02cbeb03d570fb70d1f7867ed
       </form>
 
     </div>
@@ -31,5 +36,15 @@
 </section>
 
 
-
-<app-autres></app-autres>
+<div *ngIf="nagasa == 1">
+  <app-oujda></app-oujda>
+</div>
+<div *ngIf="nagasa == 2">
+  <app-jerada></app-jerada>
+</div>
+<div *ngIf="nagasa == 3">
+  <app-berkane></app-berkane>
+</div>
+<div *ngIf="nagasa == 4">
+  <app-autres></app-autres>
+</div>

@@ -12,17 +12,34 @@
 
   <!-- /* --------------------------- START OF NAVBAR  -------------------------------- */ -->
   <header>
-    <nav class="d-flex flex-row justify-content-center align-items-center">
-      <div class="logo ml-5"><a routerLink="/Acceuil"><img src="../assets/images/logo.png"></a></div>
-      <ul class="container_1 d-flex flex-row align-items-center justify-content-center">
-        <li> <a routerLink="/">A propos</a></li>
-        <li><a routerLink="/"> Formation</a></li>
-        <li><a routerLink="/Candidatures">Candidatures</a></li>
-        <li class="button_1">Inscris-Toi</li>
-      </ul>
-      <div class="toggler m-2" (click)="showNav()"><img src="../assets/images/arrow-down.png" alt="toggler"
-          class="w-100 h-100"></div>
+
+    <nav>
+      <div class="wrapper">
+        <div class="theContainer d-flex flex-row">
+          <!-- menu -->
+          <div class="navItems d-flex flex-column flex-md-row">
+            <div class="logo">
+              <a routerLink="/"><img src="../assets/images/logo.png" style="width: 100%;"></a>
+            </div>
+            <div class="itemsList">
+              <ul>
+                <li><a routerLink="/" (click)="closeNave()">A propos</a></li>
+                <li><a routerLink="/" (click)="closeNave()"> Formation</a></li>
+                <li><a routerLink="candidatures" (click)="closeNave()">Candidature</a></li>
+                <li><button class="button_1" (click)="openModalWithClass(template)"
+                    (click)="closeNave()">Inscris-Toi</button></li>
+              </ul>
+
+            </div>
+          </div>
+          <!-- menu Toggler -->
+          <div class="menuToggler ml-3">
+            <button (click)="openNav()"></button>
+          </div>
+        </div>
+      </div>
     </nav>
+
   </header>
   <!-- /* --------------------------- end OF NAVBAR  -------------------------------- */ -->
 
@@ -33,14 +50,85 @@
     <!--  END  OF ROUTER  -->
   </main>
 
+  <!-- template modal  -->
+  <ng-template #template>
+
+    <div class="modal-header">
+      <div class="modal-logo"><img src="../assets/images/logo.png" alt="logo" class="w-100"></div>
+      <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+
+    <div class="modal-body">
+
+      <form [formGroup]="candidatform" (ngSubmit)="onSubmit()">
+        <div class="d-flex flex-wrap ml-2">
+
+          <div class="group">
+            <input type="text" formControlName="lastname" required /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Nom</label>
+          </div>
+
+          <div class="group">
+            <input type="text" formControlName="firstname" required /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Prénom</label>
+          </div>
+
+          <div class="group">
+            <input type="text" formControlName="address" required="required" /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Adresse</label>
+          </div>
+
+          <div class="group">
+            <input type="email" formControlName="email" required="required" /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Email</label>
+          </div>
+
+          <div class="group">
+            <input type="text" formControlName="number" required="required" /><span class="highlight"></span><span
+              class="bar"></span>
+            <label>Numéro de téléphone</label>
+          </div>
+
+
+          <div class="group">
+            <select formControlName="campus" class="campus-select" required>
+
+              <option value="Oujda">Oujda</option>
+              <option value="Berkane">Berkane</option>
+              <option value="Jerada">Jerada</option>
+            </select>
+            <label>Campus</label>
+          </div>
+        </div>
+        <div class="group d-flex justify-content-center g-area">
+          <textarea type="textarea" rows="4" formControlName="motivation" required="required"></textarea><span
+            class="highlight"></span>
+          <label>Motivation</label>
+        </div>
+        <div class="btn-box">
+          <button class="btn btn-submit mr-2" type="submit" [disabled]="!candidatform.valid">Validé</button>
+          <button class="btn btn-cancel" type="button" (click)="modalRef.hide()">Annuler</button>
+        </div>
+      </form>
+
+    </div>
+  </ng-template>
+
 
 
   <!-- /* --------------------------- START OF THE FOOTER   -------------------------------- */ -->
 
+  <app-contact-section></app-contact-section>
 
   <footer class="container_2">
     <div class="c2_i1">
-      <h6>CONTACTER-NOUS SUR : </h6>
+      <h6>CONTACTEZ-NOUS SUR : </h6>
       <h5>aljisr@menara.ma</h5>
     </div>
     <div class="c2_i2">
@@ -49,10 +137,10 @@
     <div class="c2_i3">
       <h6>Suivez-nous sur les reseaux sociaux</h6>
       <div class="container_2_1">
-        <div class="facebook"><img src="../assets/images/facebook logo.png"> </div>
-        <div class="twitter"><img src="../assets/images/twitter logo.png"> </div>
-        <div class="linkedin"><img src="../assets/images/linkedin logo.png"> </div>
-        <div class="youtube"><img src="../assets/images/youtube logo.png"> </div>
+        <div class="facebook"><img src="../assets/images/facebooklogo.png"> </div>
+        <div class="twitter"><img src="../assets/images/twitterlogo.png"> </div>
+        <div class="linkedin"><img src="../assets/images/linkedinlogo.png"> </div>
+        <div class="youtube"><img src="../assets/images/youtubelogo.png"> </div>
       </div>
     </div>
   </footer>

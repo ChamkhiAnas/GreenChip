@@ -1,0 +1,11 @@
+<section class="contact-us">
+  <form [formGroup]="mailform" (ngSubmit)="onSend()">
+    <div class="d-flex justify-content-center flex-wrap">
+      <input type="email" formControlName="email" placeholder="exemple@gmail.com" class="email-bar ml-4 mr-4" required>
+
+      <input type="text" formControlName="message" placeholder="Envoyez nous un message" class="message-bar ml-4 mr-4">
+
+      <button type="submit" class="send-button" [disabled]="!mailform.valid">Envoyez</button>
+    </div>
+  </form>
+</section>

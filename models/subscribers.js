@@ -4,24 +4,40 @@ const Schema = mongoose.Schema;
 const subscriberSchema = new Schema({
     lastName: {
         type: String,
-        required: true,
+        required: true
     },
     firstName: {
         type: String,
-        require: true,
+        required: true
+    },
+    address: {
+        type: String,
+        required: true
     },
     number: {
-        type: Number,
+        type: String,
         required: true,
     },
+
     email: {
         type: String,
         required: true,
         unique: true
     },
+
+    campus: {
+        type: String,
+        required: true
+
+    },
+    motivation: {
+        type: String,
+        required: true
+    },
     subscribeDate: {
         type: Date,
-        default: Date.now
+        default: Date.now,
+        required: false
     }
 }, {
     collection: 'subscribers'
